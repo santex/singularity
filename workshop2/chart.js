@@ -9,7 +9,7 @@ function joinChart() {
 
     selection.each(function() {
       var svg = d3.select(this).append("svg")
-          .attr("width", 1280)
+          .attr("width", 1320)
           .attr("height", 720)
           .attr("class", "join chart")
         .append("g")
