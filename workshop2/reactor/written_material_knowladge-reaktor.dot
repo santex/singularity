@@ -1,0 +1,22 @@
+digraph test {
+	graph [size="35,35", ratio=fill];
+	node [label="\N"];
+	graph [bb="0,0,148,148"];
+	written_material [label="", color=black, height="0.19444", style=filled, width="0.19444", pos="44,44"];
+	abstract_entity [label="", color=black, height="0.19444", style=filled, width="0.19444", pos="77,41"];
+	cyberpunk [label="", color=black, height="0.19444", style=filled, width="0.19444", pos="77,74"];
+	literary_composition [label="", color=black, height="0.19444", style=filled, width="0.19444", pos="44,77"];
+	writing [label="", color=black, height="0.19444", style=filled, width="0.19444", pos="107,107"];
+	fantasy [label="", color=black, height="0.19444", style=filled, width="0.19444", pos="11,107"];
+	piece_of_writing [label="", color=black, height="0.19444", style=filled, width="0.19444", pos="11,74"];
+	communication [label="", color=black, height="0.19444", style=filled, width="0.19444", pos="11,41"];
+	phantasy [label="", color=black, height="0.19444", style=filled, width="0.19444", pos="44,11"];
+	literary_work [label="", color=black, height="0.19444", style=filled, width="0.19444", pos="77,8"];
+	black_and_white [label="", color=black, height="0.19444", style=filled, width="0.19444", pos="110,8"];
+	entity [label="", color=black, height="0.19444", style=filled, width="0.19444", pos="110,41"];
+	fiction [label="", color=black, height="0.19444", style=filled, width="0.19444", pos="110,74"];
+	written_communication [label="", color=black, height="0.19444", style=filled, width="0.19444", pos="74,110"];
+	sciencefiction [label="", color=black, height="0.19444", style=filled, width="0.19444", pos="8,8"];
+	written_language [label="", color=black, height="0.19444", style=filled, width="0.19444", pos="140,107"];
+	abstraction [label="", color=black, height="0.19444", style=filled, width="0.19444", pos="140,140"];
+}

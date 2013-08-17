@@ -1,0 +1,170 @@
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<style type="text/css">
+
+body { 
+  font-family: Corbel, Helvetica, sans-serif; font-size: 10pt;
+  
+}
+a { text-decoration: none }
+
+.compass .back { fill: #eee; fill-opacity: .8; }
+.compass .fore { stroke: #666; stroke-width: 1.5px; }
+.compass rect.back.fore { fill: #999; fill-opacity: .3; stroke: #eee; stroke-width: 1px; shape-rendering: crispEdges; }
+.compass .direction { fill: none; }
+.compass .chevron { fill: none; stroke: #999; stroke-width: 5px; }
+.compass .zoom .chevron { stroke-width: 4px; }
+.compass .active .chevron, .compass .chevron.active { stroke: #fff; }
+.compass.active .active .direction { fill: #999; }
+
+#search {
+  padding:10px;
+  text-float:left;
+  background: white; border: solid 2px black; border-radius: 5px;
+  padding: 14px;
+  font-weight: bold;
+  overflow-y:auto;
+  
+  
+}
+b{
+  font-size: 24px;
+
+  }
+#searchForm { display: inline; }
+#searchButton { display: inline; vertical-align: middle }
+
+#chat { width: 120px; }
+.them { font-weight: bold; }
+.them:before { content: 'them '; color: #bbb; font-size: 14px; }
+.you { font-style: italic; }
+.you:before { content: 'you '; color: #bbb; font-size: 14px; font-weight: bold; }
+#log {
+  padding:10px;
+  list-style: none;
+  padding: 0;
+/*  margin: 0;*/
+}
+#log li {
+padding:10px;
+}
+#img li {
+
+  display:inline;
+
+}
+.widgetPoll{width:200px;}
+</style>
+<form id="form" >
+<div id="search">
+  <b>Concept - miner</b>
+    <input type="text" id="chat"   placeholder="search" />
+    <input id="submit" type="submit" name="submit" value="send" />
+    <div id="status" style="padding:10px;float:right;">Not connected</div>
+    <span id="connected">0</span>
+    <center>
+    <ul id="log"></ul>
+    </center>
+</div>
+<ul id="img"></ul>
+</form>
+<script>
+// let's invite Firefox to the party.
+if (window.MozWebSocket) {
+  window.WebSocket = window.MozWebSocket;
+}
+
+
+
+
+
+
+
+      function iterateAttributesAndFormHTMLLabels(o){
+          var s = '';
+          for(var a in o){
+              if (typeof o[a] == 'object'){
+                  s+='<hr /><h5>'+a+'</h5>';
+                  s+=iterateAttributesAndFormHTMLLabels(o[a]);
+              }else{
+                  if(a.match("[0-9]")){
+                  s+='<li>'+o[a]+'</li>';
+                  }else{
+                  s+='<div>'+a+':'+o[a]+'</div>';
+                  }
+
+              }//end if
+          }//end for
+          return s;
+      }//end function
+
+
+function openConnection() {
+  // uses global 'conn' object
+  if (conn.readyState === undefined || conn.readyState > 1) {
+    conn = new WebSocket('ws://0.0.0.0:3000');
+    conn.onopen = function () {
+      state.className = 'success';
+      state.innerHTML = 'Socket open';
+    };
+
+    conn.onmessage = function (event) {
+       console.log(event.data);
+      var message = JSON.parse(event.data);
+      if (!(/^\d+$/).test(message)) {
+        img.innerHTML =  iterateAttributesAndFormHTMLLabels(message) ;
+      } else {
+        connected.innerHTML = message;
+      }
+    };
+
+    conn.onclose = function (event) {
+      state.className = 'fail';
+      state.innerHTML = 'Socket closed';
+    };
+  }
+}
+
+var connected = document.getElementById('connected'),
+    log = document.getElementById('log'),
+    img = document.getElementById('img'),
+    chat = document.getElementById('chat'),
+    form = chat.form,
+    conn = {},
+    state = document.getElementById('status'),
+    entities = {
+      '<' : '&lt;',
+      '>' : '&gt;',
+      '&' : '&amp;'
+    };
+
+if (window.WebSocket === undefined) {
+  state.innerHTML = 'Sockets not supported';
+  state.className = 'fail';
+} else {
+  state.onclick = function () {
+    if (conn.readyState !== 1) {
+      conn.close();
+      setTimeout(function () {
+        openConnection();
+      }, 250);
+    }
+  };
+
+
+  window.addEventListener("submit",  function (event) {
+    event.preventDefault();
+
+    // if we're connected
+    if (conn.readyState === 1) {
+      conn.send(chat.value.toString());
+      log.innerHTML = '<li class="you">' + chat.value + '</li>' ;
+
+      chat.value = '';
+    }
+  });
+
+  
+}
+
+</script>
+<script> openConnection(); </script>

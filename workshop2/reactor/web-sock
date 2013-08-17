@@ -1,0 +1,126 @@
+#!/usr/bin/perl
+
+ use Cache::Memcached::Fast;
+
+         our $memd = new Cache::Memcached::Fast({
+             servers => [ { address => 'localhost:11211', weight => 2.5 }],
+             namespace => 'my:',
+             connect_timeout => 0.2,
+             io_timeout => 0.1,
+             close_on_error => 1,
+             compress_threshold => 100_000,
+             compress_ratio => 0.9,
+             max_failures => 1,
+             max_size => 512 * 1024,
+         });
+
+
+
+use strict;
+use warnings;
+use JSON::XS;
+use Data::Dumper;
+use Data::Printer;
+use IO::Async::Loop;
+use Net::Async::WebSocket::Server;
+use AnyEvent::Subprocess::Easy;
+
+push @ARGV,3000 unless(@ARGV);
+
+my @symbols = ();
+my $PORT = shift @ARGV;
+my $JSON = {};
+
+sub search {
+  my $search = shift;
+  use AnyEvent::Subprocess::Easy qw(qx_nonblock);
+  my $date = qx_nonblock('perl ObjectSet.pl '.$search)->recv;
+  return encode_json({file=>$date});
+}
+
+sub  decruft  {
+  my  $self  =  shift;
+  my($file)  =  @_;
+  my($cruftSet)  =  q{%§&|#[^+*(  ]),'";  };
+  my  $clean  =  $file;
+  $clean=~s/\Q$_//g  for  split("",$cruftSet);
+
+  return  $clean;
+}
+
+sub check {
+ 
+ my $name = shift;
+ my $prog = shift;
+    
+
+  if(defined(my $ret = $memd->get(sprintf("%s_%s",$name,$prog)))){
+    return $ret;
+  }else{
+
+    my $ret;
+    if($prog =~/ObjectSet/){
+       $ret = decode_json(`perl ObjectSet.pl $name;`);
+       $memd->set(sprintf("%s_%s",$name,$prog),$ret);
+    }
+    
+    
+    
+     return $ret;
+  }
+}
+
+sub printer {
+  my ($msg) = @_;
+  my $cmd = {};
+
+  $msg = "space" unless($msg);
+
+     my $data = {};
+     
+     $cmd->{action}  = [];
+    # `micro new $msg verbose`;
+      
+     
+     `perl os.pl $msg`;
+
+     my $set = check($msg,"ObjectSet");
+     
+
+        $set->{images} = [map{$_=sprintf("%s <img src='reactor/%s' style='zoom:30%%;'>",$_,$_)}split("\n",`ls *.png`)];
+    
+     $cmd->{json} = encode_json($set);
+    
+
+     return $cmd->{json};
+
+}
+my $server = Net::Async::WebSocket::Server->new(
+   on_client => sub {
+      my ( undef, $client ) = @_;
+      my $list;
+      $client->configure(
+         on_frame => sub {
+            my ( $self, $frame ) = @_;
+            $list = printer(lc $frame) unless(!$frame);
+            my %args = (max_payload_size=>9999999,buffer=> $list);
+            $self->send_frame(%args);
+         },
+      );
+
+   }
+);
+
+my $loop = IO::Async::Loop->new(max_payload_size=>11110);
+$loop->add( $server );
+$server->listen(
+   family => "inet",
+   service => $PORT,
+   ip=>"127.0.0.1",
+   on_listen => sub { print Dumper "Cannot listen - ",$_[-1];  },
+   on_resolve => sub { print Dumper "Cannot resolve - ",$_[-1];},
+   on_listen_error => sub { die "Cannot listen - $_[-1]" },
+   on_resolve_error => sub { die "Cannot resolve - $_[-1]" },
+);
+$loop->loop_forever;
+1;

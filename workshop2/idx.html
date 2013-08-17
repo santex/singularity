@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<base target="_blank">
+<base>
+<style>
+
+
+@import url(style.css);
+@import url(chart.css);
+
+html{
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  
+
+}
+.red{
+font-size: 45px;
+color: #ee0035;
+display: inline-block;
+}
+.green{
+font-size: 45px;
+color:#08fd08;
+display: inline-block;
+}
+h1,h2{
+text-transform: uppercase;
+}
+
+h1{
+font-size: 55px;
+}
+
+h2{
+font-size: 40px;
+}
+span {
+
+font-size: 25px;
+}
+
+div,li {font-size: 28px;}
+
+</style>
+<script src="/docs/assets/js/jquery.js"></script>
+<body class="overview">
+<script src="http://d3js.org/d3.v2.min.js"></script>
+<script src="chart.js"></script>
+
+<section id="streamgraph">
+<script>
+var speed = 1555;
+var count = 0;
+setInterval(function() { console.log(count++);
+d3.select("#streamgraph").html('<h1 class="white">the concepts of singularity</h1><h2><div class="white">santex@c3d2.de</div></h2><aside><span>an approximation of the not so far future. In a brackdown of the more outstanding concepts of this periode.</span><p><img src="expo.jpg" style="zoom:55%;"></p></aside>');
+d3.select("#streamgraph").call(streamChart());
+
+}, speed);                    
+</script>
+</section>
+
+
+<section>
+<h2 class="blue">Outline</h2>
+<h2><div class="white">
+
+</div></h2>
+
+<ul>
+<li>Singularity explained to somebody who never heared of it?</li>
+<li>Indicators</li>
+<li>Concepts connected to singularity.</li>
+<li>The race hase already started.</li>
+<li>Open/Closed Singularity</li>
+<li>Seed Artificial Intelligence</li>
+<li>Strong Artificial Intelligence</li>
+<li>Weak Artificial Intelligence</li>
+<li>Friendly Artificial Intelligence</li>
+<li>Artificial imagination</li>
+<li>Artificial intuition</li>
+<li>The Gatekeeper</li>
+<li>A civilisation in the box</li>
+<li>Mind Mirror</li>
+</ul>
+<span></span>
+
+</section>
+
+
+<section>
+<h1 class="double">Singularity</h1>
+
+<br><br><br>
+<p>
+<img src="expo.jpg" style="zoom:95%;">
+</p>
+<aside><span>The technological singularity is the emergence of superintelligence through technological means
+When processing speeds increasing in an exponential rate and computers become more intelligent then humans. When that moment occurs, humanity our bodies, our minds our civilization will be completely and inversely transformed.</span>
+
+<span>
+  The Artificial Intelligence Revolution which will change absolute everything</aside>
+</span>
+</section>
+
+<section>
+<div><span class="double">Some Indicators</span></div>
+<br>
+<div style="float:left">
+<ul>
+<li>Moore's Law - The Fifth Paradigm</li>
+<li>Mass Use of Inventions</li>
+<li>Dynamic RAM Smallest Feature Size</li>
+<li>Dynamic RAM Price</li>
+<li>Average Transistor Price</li>
+<li>Transistor Manufacturing Costs Falling</li>
+<li>Micro Processor Clock Speed</li>
+<li>Micro Processor Cost per Transistor Cycle</li>
+<li>Transistor per Microprocessor</li>
+<li>Processor Performance (MIPS)</li>
+<li>Total Bits Shipped</li>
+<li>Exponential Growth of Computing</li>
+<li>Growth in Supercomputer Power</li>
+<li>DNA Sequencing Cost</li>
+<li>Growth in Genbank</li>
+</ul>
+</div>
+<div style="float:right">
+<ul>  
+<li>Random Access Memory</li>
+<li>Magnetic Data Storage</li>
+<li>Price Performance (Wireless Data Devices)</li>
+<li>Internet Hosts - Logarithmic</li>
+<li>Internet Hosts - Linear</li>
+<li>Internet Data Traffic</li>
+<li>Internet Backbone Bandwidth</li>
+<li>Decrease in Size of Mechanical Devices</li>
+<li>Nanotech Science Citations</li>
+<li>U.S. Nanorelated Patents</li>
+<li>U.S. Patents Granted</li>
+<li>IT's Share of the Economy</li>
+<li>Reduction in Watts per MIPS</li>
+<li>Resolution of Noninvasive Brain Scanning</li>
+<li>Brain Scanning Image Reconstruction Time</li>
+</ul>
+</div>
+</section>
+
+
+<section>
+<h1 class="double">Are we on course / is the timeline still as expected ?</h1>
+<br><br><br>
+<p>
+<img src="moors-law.jpg" style="zoom:90%;">
+</p>
+<aside>
+  <h2 class="green">After my opinion<br>and most of the other researchers a bold  <b>yes</b>.</h2>
+  Date of emergence 2041 :) (relax +-10 years)</aside>
+</section>
+
+
+<section>
+<h1 class="double">Open/Closed Singularity</h1>
+
+<p>
+<br><div class="green">open</div>&nbsp;&nbsp;vs &nbsp;&nbsp;<div class="red">closed</div>
+<br><div class="green">free</div>&nbsp;&nbsp;vs &nbsp;&nbsp;<div class="red">supprest</div>
+<br><div class="green">free of charge</div>&nbsp;&nbsp;vs &nbsp;&nbsp;<div class="red">expensive</div>
+<br><div class="green">exponential</div>&nbsp;&nbsp;vs &nbsp;&nbsp;<div class="red">linear</div>
+<br><div class="green">central</div>&nbsp;&nbsp;vs &nbsp;&nbsp;<div class="red">de-central</div>
+<br><div class="green">civil</div>&nbsp;&nbsp;vs &nbsp;&nbsp;<div class="red">military</div>
+<br><div class="green">collective</div>&nbsp;&nbsp;vs &nbsp;&nbsp;<div class="red">individual</div>
+<br><div class="green">data-oriented</div>&nbsp;&nbsp;vs &nbsp;&nbsp;<div class="red">commercial</div>
+<br><div class="green">real time</div>&nbsp;&nbsp;vs &nbsp;&nbsp;<div class="red">historic (hybrid)</div>
+</p>
+<aside><span class="black">The Singularity will most likely be a child of the internet. Or you could say the future of the internet will have heavy influence the design of the singularity</span></aside>
+</section>
+
+
+
+
+
+
+<section id="seed_ai">
+<h1>Seed AI</h1>
+<br><br><br>
+<p>
+<img src="seed.png" style="zoom:45%;">
+<span style="zoom:95%;font-size:20px;width:40%;float:right;">
+Recursive self improvement is the ability of strong artificial intelligence to program its own software, recursively. This is sometimes also referred to as Seed AI because if an AI was created such that its engineering capabilities matched or surpassed those of its human creators, it would have the potential to autonomously improve the design of its constituent software and hardware. Having undergone these improvements, it would then be better able to find ways of optimizing its structure and improving its abilities further. It is speculated that over many iterations, such an AI would far surpass human cognitive abilities. The successful implementation of seed AI would result in a technological singularity.</span>
+</span>
+
+<aside><a href="http://localhost/app/seed/idx.html">racer</a></aside>
+</section>
+
+<section id="strong_ai">
+<h1>Strong Artificial Intelligence</h1>
+<br><br><br>
+<p>
+  <img src="strong_ai.jpg">
+</p>
+<span>
+Strong AI is hypothetical artificial intelligence that matches or exceeds<br>human intelligence,
+<br>Strong AI is associated with traits such as consciousness, sentience,<br> sapience and self-awareness observed in living beings.
+</span>
+</p>
+<aside>
+<img src="self-aware.jpg"  style="zoom:75%;" />
+</aside>
+</section>
+
+<section id="weak_ai">
+<h1>Weak Artificial Intelligence</h1>
+<br><br><br>
+<p>
+  <img src="Electronic_eye.png" style="zoom:15%;">
+</p>
+<span>
+Weak AI,<br> an artificial intelligence system which is not intended to match or exceed the capabilities of human beings
+</span>
+</p>
+<aside>HAL_9000</aside>
+</section>
+
+<section id="fai">
+<h1>Friendly Artificial Intelligence.</h1>
+<br><br><br>
+<p>
+  <img src="frendly-ai-255.jpg" style="zoom:80%;">
+
+<span>A Friendly Artificial Intelligence or FAI is an artificial intelligence (AI) that has a positive rather than negative effect on humanity.</span>
+</p>
+
+</section>
+
+
+<section id="Artificialintuition">
+<h1>Artificial intuition</h1>
+<br><br><br>
+<p>
+  <img src="intuition.jpg" style="zoom:80%;">
+<span>
+Artificial intuition is the capacity of an artificial object or software to function with intuition, or a machine-based system that has some capacity to function analogous to the human intuition.
+</span>
+</p>
+
+</section>
+
+
+
+<section id="Artificialimagination">
+<h1>Artificial imagination</h1>
+<br><br><br>
+<p>
+  <img src="imagination.jpg">
+</p>
+
+<span style="font-size:20px;float:right;">
+Artificial imagination (AIm), also called Synthetic imagination or machine imagination is defined as artificial simulation of human imagination by general or special purpose computers or artificial neural networks. The term artificial imagination is also used to describe a property of machines or programs: Among some of the traits that researchers hope to simulate using machines include creativity, vision, digital art, humor, satire, etc. Artificial imagination research uses tools and insights from many fields, including computer science, Rhetoric, psychology, creative arts, philosophy, neuroscience, affective computing, Artificial Intelligence, Artificial intuition, cognitive science, linguistics, operations research, creative writing, probability and logic. The various practitioners in the field are researching various aspects of Artificial imagination, such as Artificial (visual) imagination, Visual Information Retrieval Using Synthesized Imagery 
+</span>
+<aside>artificial simulation of human imagination</aside>
+</section>
+
+
+<section id="gatekeeper">
+<h1>The Gatekeeper</h1>
+<br><br><br>
+<p>
+  <img src="gatekeeper.jpg" style="zoom:0.6;">
+</p>
+<aside>
+<span style="font-size:32px;float:right;">
+The Gatekeeper shall be assumed to have sole power over the decision to let the AI out.
+The Gatekeeper shall be assumed to have the actual right to let the AI out, socially, not just the physical ability.
+</span>
+</aside>
+</section>
+
+
+<section id="citb2">
+<h1>A civilisation in the box</h1>
+<br><br><br>
+<p>
+  <img src="citb.png" style="zoom:0.75;">
+</p>
+<h2 style="margin-left:-65px;font-size:30px; margin-bottom:240px;"><a href="http://localhost/cf2.html" target="_blank">Biology</a></h2>
+<aside><span>A civilisation in the box is a matrix governt knowledge system with all available data at the present moment. In context to ai it would mean essential all data most likely in the smallest possible size on entity level. Also all relations and Instances of each Entitie (in fastest possible implementation)</span><br><br>
+<b style="font-size:24px;color:#fff;">in star-trek you would refere to the core (medical core, propulsion core)</b></aside>
+
+</section>
+
+<style type="text/css">
+
+      /* Sticky footer styles
+      -------------------------------------------------- */
+
+      /* Wrapper for page content to push down footer */
+      #meta {
+       float:left;
+      }
+
+      /* Wrapper for page content to push down footer */
+      #sitzung {
+       float:right;
+      }
+
+      /* Set the fixed height of the footer here */
+      #push{
+  min-height: 100%;
+      
+
+      }
+      #footer {
+        height: 60px;
+      }
+      #footer {
+        background-color: #f5f5f5;
+      }
+
+      /* Lastly, apply responsive CSS fixes as necessary */
+      @media (max-width: 767px) {
+        #footer {
+          margin-left: -20px;
+          margin-right: -20px;
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+      }
+
+
+
+      /* Custom page CSS
+      -------------------------------------------------- */
+      /* Not required for template or sticky footer method. */
+
+      #wrap > .container {
+        padding-top: 60px;
+      }
+      .container .credit {
+        margin: 20px 0;
+      }
+
+      code {
+        font-size: 80%;
+      }
+ html{
+        margin-left:90px;
+        height: 100%;
+        /* The html and body elements cannot have any padding or margin. */
+      }
+
+    </style>
+<style>
+
+circle {
+  fill: rgb(31, 119, 180);
+  fill-opacity: .25;
+  stroke: rgb(31, 119, 180);
+  stroke-width: 1px;
+}
+
+.leaf circle {
+  fill: #ff7f0e;
+  fill-opacity: 1;
+}
+
+text {
+  font: 8px sans-serif;
+}
+
+</style>
+<section>
+<iframe src="http://localhost/cf2.html" style="margin-left:-50px;width:110%;height:100%;" scrolling="no"></iframe>
+</section>
+
+
+
+<section>
+<h1 class="double">Mind-Mirror</h1>
+<br><br>
+<p>
+<img src="mind-mirror.jpg" style="zoom:80%;">
+</p>
+<aside>
+  <h2 class="green"></aside>
+</section>
+
+<!---//
+
+<section>
+<h1 class="double">Visualizing <span class="purple">Data</span> with <span class="green">Standards</span></h1>
+<h2>D3</h2>
+<aside>A.</aside>
+</section>
+
+<section id="update">
+<h1>Update</h1>
+<script>d3.select("#update").call(joinChart().mode("update"))</script>
+<h2>New data that was joined successfully to an existing element.</h2>
+</section>
+
+<section id="exit">
+<h1>Exit</h1>
+<script>d3.select("#exit").call(joinChart().mode("exit"))</script>
+<h2>Existing elements, for which there were no new data.</h2>
+<aside>I didn't include a code snippet here, but typically you just call selection.remove on exit. You can also create an exit transition, so that elements animate before removal.</aside>
+</section>
+
+<section id="enter-update">
+<h1 class="double">Enter <span class="grey">+</span><br>Update</h1>
+<script>d3.select("#enter-update").call(joinChart().mode("enter update"))</script>
+<h2>Entering nodes are added to update on append.</h2>
+<aside>OK, one more special feature of the append method on enter selections. This makes it easier for you to operate on entering and updating elements simultaneously, without needing to reselect after computing the data join. This reduces code duplication.</aside>
+</section>
+
+
+
+<section id="bar-chart">
+<script>
+d3.select("#bar-chart").datum([1, 1, 2, 3, 5, 8]).call(barChart());
+</script>
+<h2><a href="bar-chart.html">bar-chart.html</a></h2>
+</section>
+
+<section id="dot-chart">
+<script>
+d3.select("#dot-chart").datum([
+  {x: 10.0, y: 9.14},
+  {x:  8.0, y: 8.14},
+  {x: 13.0, y: 8.74},
+  {x:  9.0, y: 8.77},
+  {x: 11.0, y: 9.26},
+  {x: 14.0, y: 8.10},
+  {x:  6.0, y: 6.13},
+  {x:  4.0, y: 3.10},
+  {x: 12.0, y: 9.13},
+  {x:  7.0, y: 7.26},
+  {x:  5.0, y: 4.74},
+]).call(dotChart());
+</script>
+<h2><a href="dot-chart.html">dot-chart.html</a></h2>
+<aside>Nerd cred if you recognize this!</aside>
+</section>
+
+<section id="enter">
+<h1>Enter</h1>
+<script>d3.select("#enter").call(joinChart().mode("enter"))</script>
+<h2>New data, for which there were no existing elements.</h2>
+</section>
+
+<section id="stocks-csv-chart">
+<script>(function() {
+
+var format = d3.time.format("%b %Y");
+
+d3.csv("stocks.csv", function(stocks) {
+  stocks.forEach(function(d) {
+    d.price = +d.price;
+    d.date = format.parse(d.date);
+  });
+
+  stocks = stocks.filter(function(d) {
+    return d.symbol == "S&P 500";
+  });
+
+  d3.select("#stocks-csv-chart").insert("div", "h2")
+      .datum(stocks)
+    .call(timeChart()
+      .x(function(d) { return d.date; })
+      .y(function(d) { return d.price; }));
+});
+
+})()</script>
+
+</section>
+---->
+<script src="stack.v0.js"></script>
+<script src="highlight.v0.js"></script>

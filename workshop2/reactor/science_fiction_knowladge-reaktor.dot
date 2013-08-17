@@ -1,0 +1,6 @@
+digraph test {
+	graph [size="35,35", ratio=fill];
+	node [label="\N"];
+	graph [bb="0,0,2520,2520"];
+	science_fiction [label="", color=black, height="0.19444", style=filled, width="0.19444", pos="1260,1260"];
+}

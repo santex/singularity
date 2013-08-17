@@ -1,0 +1,5 @@
+digraph test {
+	graph [size="35,35", ratio=fill];
+	node [label="\N"];
+	graph [bb="0,0,0,0"];
+}
