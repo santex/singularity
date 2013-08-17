@@ -50,16 +50,21 @@ a {font-size: 11px;display:block; width:550px}
 <script src="http://d3js.org/d3.v2.min.js"></script>
 <script src="chart.js"></script>
 
+
+
+
+
 <section id="streamgraph">
 <script>
 var speed = 1555;
 var count = 0;
 setInterval(function() { console.log(count++);
-d3.select("#streamgraph").html('<h1 class="white">the concepts of singularity</h1><h2><div class="white">approximation by santex@c3d2.de</div></h2><aside><span>an approximation of the not so far future. In a brackdown of the more outstanding concepts of this periode.</span><p><img src="expo.jpg" style="zoom:55%;"></p></aside>');
+d3.select("#streamgraph").html('<h1 class="white">the concepts of singularity</h1><h2><div class="white">approximation by   santex@c3d2.de</div></h2><aside><span>an approximation of the not so far future. In a brackdown of the more outstanding concepts of this periode.</span><p><img src="expo.jpg" style="zoom:55%;"></p></aside>');
 d3.select("#streamgraph").call(streamChart());
 
 }, speed);                    
 </script>
+<img src="nothanks.png" style="position:fixed;left:0px;top:0px;"/>
 </section>
 
 
