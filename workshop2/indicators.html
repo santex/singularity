@@ -1,5 +1,13 @@
-    
-    <link rel="stylesheet" type="text/css" href="http://localhost/docs/assets/css/photos.css">
+<style>
+html{
+  margin: 20px;
+  padding: 20px;
+  height:100%;
+  
+
+}
+</style>    
+    <link rel="stylesheet" type="text/css" href="http://santex.github.io/singularity/docs/assets/css/photos.css">
     <script src="http://yui.yahooapis.com/3.10.3/build/yui/yui-min.js"></script>
 
 <div class="yui3-skin-sam">
@@ -107,7 +115,7 @@ YUI().use('yql', 'node', 'anim', 'dd', 'dd-plugin', 'dd-drop-plugin', 'slider', 
             });
             //Create and render the slider
             var sl = new Y.Slider({
-                length: '400px', value: 320, max: 370, min: 60
+                length: '200px', value: 120, max: 150, min: 5
             }).render('.horiz_slider');
             //Listen for the change
             sl.after('valueChange',function (e) {
@@ -191,7 +199,7 @@ YUI().use('yql', 'node', 'anim', 'dd', 'dd-plugin', 'dd-drop-plugin', 'slider', 
         var count = wrapper.all('img.selected').size();
         //Set the style on the proxy node
         e.target.get('dragNode').setStyles({
-            height: '25px', width: '25px'
+            height: '125px', width: '125px'
         }).set('innerHTML', '<span>' + count + '</span>');
         //Offset the dragNode
         e.target.deltaXY = [25, 5];
