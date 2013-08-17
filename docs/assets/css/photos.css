@@ -5,7 +5,6 @@
     overflow: auto;
 }
 #yui-main .yui-g ul.loading {
-    background-image: url(bar.gif);
     background-repeat: no-repeat;
     background-position: 40% 40%;
 }
@@ -34,7 +33,6 @@
 }
 #yui-main .yui-g ul:after { display: block; clear: both; visibility: hidden; content: '.'; height: 0;}
 .yui3-dd-proxy {
-    background-image: url( countBadge.png );
     background-repeat: no-repeat;
     color: white;
     font-weight: bold;
@@ -45,7 +43,6 @@
 }
 #photoList li a {
     display: block;
-    background-image: url( folder.png );
     background-repeat: no-repeat;
     background-position: 1px 3px;
     padding: 3px;
@@ -68,11 +65,9 @@
     font-weight: bold;
 }
 #photoList li.all a {
-    background-image: url(photo.png);
 }
 #photoList li.yui3-dd-drop-over a {
     border-color: black;
-    background-image: url( folder_open.png );
 }
 #bd .yui-b p {
     margin: 1em;
@@ -83,7 +78,6 @@
 .yui3-skin-sam #ft strong,
 .yui3-skin-sam #ft em {
     float: right;
-    background-image: url(thumbnail.png);
     display: block;
     height: 32px;
     width: 32px;
@@ -91,7 +85,6 @@
     background-position: 8px 8px;
 }
 .yui3-skin-sam #ft strong {
-    background-image: url(thumbnail_large.png);
     background-position: 0 0;
 }
 .yui3-skin-sam #ft .horiz_slider {
