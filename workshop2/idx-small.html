@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<base target="_blank">
+<base>
+<style>
+
+
+@import url(style-small.css);
+@import url(chart.css);
+
+html{
+  margin: 0;
+  padding: 0;
+
+  
+
+}
+.red{
+font-size: 1.2em;
+color: #ee0035;
+display: inline-block;
+}
+.green{
+font-size: 1.2em;
+color:#08fd08;
+display: inline-block;
+}
+h1,h2{
+text-transform: uppercase;
+}
+
+h1{
+font-size: 1.3em;
+}
+
+h2{
+font-size: 1.2em;
+}
+span {
+
+font-size: 1.1em;
+}
+img{
+border: dotted 0px #fff;
+  }
+
+div,li {font-size: 0.85em;}
+a {font-size: 10px;display:block; width:80%}
+</style>
+<body class="overview">
+<script src="http://d3js.org/d3.v2.min.js"></script>
+<script src="chart.js"></script>
+
+
+
+
+
+<section id="streamgraph">
+<script>
+var speed = 1555;
+var count = 0;
+setInterval(function() { console.log(count++);
+d3.select("#streamgraph").html('<h1 class="white">the concepts of singularity</h1><h2><div class="white">approximation by   santex@c3d2.de</div></h2><aside><span>an approximation of the not so far future. In a brackdown of the more outstanding concepts of this periode.</span><p><img src="expo.jpg" style="width:330px;"></p></aside>');
+d3.select("#streamgraph").call(streamChart());
+
+}, speed);                    
+</script>
+
+</section>
+
+
+<section id="outline">
+<h1 class="blue">Outline</h1><ul  style="float:right;">
+<li>Singularity explained to somebody who never heared of it?</li>
+<li>Indicators</li>
+<li>The race hase already started.</li>
+<li>Open/Closed Singularity</li>
+<li>Ethics of artificial intelligence</li>
+<li>Seed Artificial Intelligence</li>
+<li>Strong Artificial Intelligence</li>
+<li>Weak Artificial Intelligence</li>
+<li>Friendly Artificial Intelligence</li>
+<li>Artificial imagination</li>
+<li>Artificial intuition</li>
+<li>The Gatekeeper</li>
+<li>Situated approach. (environment)</li>
+<li>Frames</li>
+<li>A civilisation in the box</li>
+<li>Mind Mirror</li>
+<li>Links</li>
+<li>Data</li>
+<li>Graphs</li>
+</ul>
+
+</section>
+
+
+<section id="singu" style="background:#fff;">
+<h1 class="double black">Singularity</h1>
+
+<br><br><br>
+<p>
+<img src="sing.gif">
+</p>
+<aside>
+
+<span class="white" style="font-size: 1.2em;">
+  The Artificial Intelligence Revolution which will change absolute everything
+</span>
+<span>The technological singularity is the emergence of superintelligence through technological means
+When processing speeds increasing in an exponential rate and computers become more intelligent then humans. When that moment occurs, humanity our bodies, our minds our civilization will be completely and inversely transformed.</span>
+</aside>
+</section>
+
+<section>
+<div><span class="double">Some Indicators</span></div>
+<br>
+<div style="float:left">
+<ul>
+<li>Moore's Law - The Fifth Paradigm</li>
+<li>Mass Use of Inventions</li>
+<li>Dynamic RAM Smallest Feature Size</li>
+<li>Dynamic RAM Price</li>
+<li>Average Transistor Price</li>
+<li>Transistor Manufacturing Costs Falling</li>
+<li>Micro Processor Clock Speed</li>
+<li>Micro Processor Cost per Transistor Cycle</li>
+<li>Transistor per Microprocessor</li>
+<li>Processor Performance (MIPS)</li>
+<li>Total Bits Shipped</li>
+<li>Exponential Growth of Computing</li>
+<li>Growth in Supercomputer Power</li>
+<li>DNA Sequencing Cost</li>
+<li>Growth in Genbank</li>
+</ul>
+</div>
+<div style="float:right">
+<ul>  
+<li>Random Access Memory</li>
+<li>Magnetic Data Storage</li>
+<li>Price Performance (Wireless Data Devices)</li>
+<li>Internet Hosts - Logarithmic</li>
+<li>Internet Hosts - Linear</li>
+<li>Internet Data Traffic</li>
+<li>Internet Backbone Bandwidth</li>
+<li>Decrease in Size of Mechanical Devices</li>
+<li>Nanotech Science Citations</li>
+<li>U.S. Nanorelated Patents</li>
+<li>U.S. Patents Granted</li>
+<li>IT's Share of the Economy</li>
+<li>Reduction in Watts per MIPS</li>
+<li>Resolution of Noninvasive Brain Scanning</li>
+<li>Brain Scanning Image Reconstruction Time</li>
+</ul>
+</div>
+</section>
+
+<section id="timeline">
+<h1 class="double">Timeline still as expected?</h1>
+<br><br><br>
+<p>
+<img src="moors-law.jpg">
+</p>
+<aside>
+  <span class="green">After my opinion and most of the other guys a bold  <b style="font-size:1.5em;">yes</b>.<br><br></span>
+  <span class="white">Date of emergence 2041 :)<br>(relax +-10 years)</span></aside>
+</section>
+
+
+<section id="openclosed">
+<h1 class="double">Open/Closed Singularity</h1>
+<br>
+<p>
+<br><div class="green">open</div> VS <div class="red">closed</div>
+<br><div class="green">free</div> VS <div class="red">supprest</div>
+<br><div class="green">free of charge</div> VS <div class="red">expensive</div>
+<br><div class="green">exponential</div> VS <div class="red">linear</div>
+<br><div class="green">central</div> VS <div class="red">de-central</div>
+<br><div class="green">civil</div> VS <div class="red">military</div>
+<br><div class="green">collective</div> VS <div class="red">individual</div>
+<br><div class="green">data-oriented</div> VS <div class="red">commercial</div>
+<br><div class="green">real time</div> VS <div class="red">historic (hybrid)</div>
+<br><div class="green">visible</div> VS <div class="red">hidden</div>
+</p>
+<aside><span class="black">The Singularity will most likely be a child of the internet. Or you could say the future of the internet will influence the design of the singularity implementation</span></aside>
+</section>
+
+
+
+
+
+
+<section id="ai_ethics">
+<h1 class="double">Ethics of artificial intelligence.</h1>
+<br><br><br>
+<p><img src="ethics.png" style="width:440px;">
+<span style="zoom:95%;font-size:0.75em;width:44%;float:right;">
+The "ethics of artificial intelligence" is the part of the ethics of technology specific to robots and other artificially intelligent beings. It is typically divided into roboethics, a concern with the moral behavior of humans as they design, construct, use and treat artificially intelligent beings, and machine ethics, concern with the moral behavior of artificial moral agents (AMAs).</span><br>
+</p>
+
+
+<aside>
+<span class="white">interaction</span>
+<center><img src="ethics2.jpg"  style="width:200px;" /></center>
+<span class="white">scene from the movie AI</span>
+</aside>
+</section>
+
+<section id="seed_ai">
+<h1 class="double">Seed AI</h1>
+<br><br><br>
+<p>
+<img src="seed.png" style="width:400px;">
+<span style="zoom:95%;font-size:0.8em;width:50%;float:right;">
+Recursive self improvement is the ability of strong artificial intelligence to program its own software, recursively. This is sometimes also referred to as Seed AI because if an AI was created such that its engineering capabilities matched or surpassed those of its human creators, it would have the potential to autonomously improve the design of its constituent software and hardware. Having undergone these improvements, it would then be better able to find ways of optimizing its structure and improving its abilities further. It is speculated that over many iterations, such an AI would far surpass human cognitive abilities. The successful implementation of seed AI would result in a technological singularity.</span>
+</p>
+<aside><a href="http://santex.github.io/singularity/seed/idx.html"><span class="white">racer</span></a></aside>
+</section>
+
+<section id="strong_ai">
+<h1 class="double">Strong Artificial Intelligence</h1>
+<br><br><br>
+<p>
+  <img src="strong_ai.jpg"  style="width:350px;">
+<span style="zoom:95%;font-size:0.9em;width:55%;float:right;">
+Strong AI is hypothetical artificial intelligence that matches or exceeds human intelligence,
+Strong AI is associated with traits such as consciousness, sentience, sapience and self-awareness observed in living beings.</span>
+</p>
+<aside>
+<span class="white">self-awareness</span>
+<center><img src="self-aware.jpg"   style="width:300px;"></center>
+<span class="white">scene from the movie AI</span>
+</section>
+
+<section id="weak_ai">
+<h1 class="double">Weak Artificial Intelligence</h1>
+<br><br><br>
+<p>
+  <img src="Electronic_eye.png" style="zoom:20%;">
+
+<span style="zoom:95%;font-size:0.9em;width:50%;float:right;">
+Weak AI,an artificial intelligence system which is not intended to match or exceed the capabilities of human beings
+</span>
+</p>
+<aside><span class="white">HAL_9000</span></aside>
+</section>
+
+<section id="fai">
+<h1 class="double">Friendly Artificial Intelligence.</h1>
+<br><br><br>
+<p>
+  <img src="frendly-ai-255.jpg">
+
+<span style="zoom:95%;font-size:0.8em;width:50%;float:right;">A Friendly Artificial Intelligence or FAI is an artificial intelligence (AI) that has a positive rather than negative effect on humanity.</span>
+</p>
+
+</section>
+
+
+<section id="artificialintuition">
+<h1 class="double">Artificial intuition</h1>
+<br><br><br>
+<p>
+  <img src="intuition.jpg"  style="width:450px;">
+<span style="zoom:95%;font-size:0.9em;width:45%;float:right;">
+Artificial intuition is the capacity of an artificial object or software to function with intuition, or a machine-based system that has some capacity to function analogous to the human intuition.
+</span>
+</p>
+
+</section>
+
+
+
+<section id="artificialimagination">
+<h1 class="double">Artificial imagination</h1>
+<br><br><br>
+<p>
+  <img src="imagination.jpg">
+
+<span style="zoom:95%;font-size:0.8em;width:65%;float:right;">
+Artificial imagination (AIm), also called Synthetic imagination or machine imagination is defined as artificial simulation of human imagination by general or special purpose computers or artificial neural networks. The term artificial imagination is also used to describe a property of machines or programs: Among some of the traits that researchers hope to simulate using machines include creativity, vision, digital art, humor, satire, etc. Artificial imagination research uses tools and insights from many fields, including computer science, Rhetoric, psychology, creative arts, philosophy, neuroscience, affective computing, Artificial Intelligence, Artificial intuition, cognitive science, linguistics, operations research, creative writing, probability and logic. The various practitioners in the field are researching various aspects of Artificial imagination, such as Artificial (visual) imagination, Visual Information Retrieval Using Synthesized Imagery 
+</span>
+</p>
+<aside><span class="white">artificial simulation of human imagination</span></aside>
+</section>
+
+
+<section id="gatekeeper">
+<h1 class="double">The Gatekeeper</h1>
+<br><br><br>
+<p>
+  <img src="gatekeeper.jpg"  style="width:450px;">
+</p>
+<aside>
+<span style="float:right;">
+The Gatekeeper shall be assumed to have sole power over the decision to let the AI out.
+The Gatekeeper shall be assumed to have the actual right to let the AI out, socially, not just the physical ability.
+</span>
+</aside>
+</section>
+
+
+<section id="ai_sit">
+<h1 class="double">Situated (environment / syntetic)</h1>
+<br><br><br>
+<p><img src="situated.png" style="width:650px;">
+</p>
+<aside><span>
+The 'situated approach' builds agents that are designed to behave effectively successfully in their environment.</span>
+</aside>
+</section>
+
+
+
+<section id="aiframe">
+<h1 class="double">Frames</h1>
+
+<img src="frame.png" style="width:560px;">
+<span style="zoom:95%;font-size:0.75em;width:28%;float:right;">
+"Frames" were proposed by Marvin Minsky in his 1974 article A Framework for Representing Knowledge. A frame is an artificial intelligence data structure used to divide knowledge into substructures by representing stereotyped situations. Frames are connected together to form a complete idea. Frames are also an extensive part of knowledge representation and reasoning schemes. Frames were originally derived from semantic networks and are therefore part of structure based knowledge representations. According to Russell and Norvig's Artificial Intelligence, A Modern Approach, structural representations assemble ...facts about particular object and even types and arrange the types into a large taxonomic hierarchy analogous to a biological taxonomy.
+</span>
+
+
+</section>
+
+
+
+<section id="citb2">
+<h1 class="double">A civilisation in the box</h1>
+
+  <img src="citb.png">
+
+<h2 style="margin-left:5px;font-size: 0.8em; margin-bottom:240px;"><a href="http://santex.github.io/singularity/cf2.html" target="_blank">Biology</a></h2>
+<aside><span>A civilisation in the box is a matrix governt knowledge system with all available data at the present moment. In context to ai it would mean essential all data most likely in the smallest possible size on entity level. Also all relations and Instances of each Entitie (in fastest possible implementation)</span><br><br>
+<b style="font-size:24px;color:#fff;">in star-trek you would refer to the medical core, propulsion core</b></aside>
+</p>
+</section>
+
+<style type="text/css">
+
+ html{
+        margin-left:20px;
+        height: 100%;
+        /* The html and body elements cannot have any padding or margin. */
+      }
+
+    </style>
+<style>
+
+circle {
+  fill: rgb(31, 119, 180);
+  fill-opacity: .25;
+  stroke: rgb(31, 119, 180);
+  stroke-width: 1px;
+}
+
+.leaf circle {
+  fill: #ff7f0e;
+  fill-opacity: 1;
+}
+
+text {
+  font: 8px sans-serif;
+}
+
+</style>
+<section id="citbsample">
+<iframe src="http://santex.github.io/singularity/cf2-big.html" style="margin-left:1px;width:100%;height:100%;" scrolling="no"></iframe>
+</section>
+
+
+<section id="mindmirror">
+<h1 class="double">Mind-Mirror / Thought on disc</h1>
+<br><br>
+<p>
+<img src="mind-mirror.jpg" style="zoom:80%;">
+</p>
+<aside><span>Two major possible ways [<span class="red">application specific (requires reallearning every time))</span>,<span class="green">generic (collect and load applications with thoughts)</span><span> guinea pig required</span></aside>
+</section>
+
+<section id="links">
+<h1 class="double">Links</h1>
+<br><br>
+<ul>
+<li><a href="http://santex.github.io/singularity/seed/idx.html">racer</a></li>
+<br />
+<li><a href="http://santex.github.io/singularity/cf5-index.html">A civilisation in the box categorys</a>
+<a href="http://santex.github.io/singularity/cf2-cat.html">A civilisation in the box  categorys</a></li>
+<br />
+<li><a href="http://santex.github.io/singularity/cf5.html">A civilisation in the box concepts</a>
+<a href="http://santex.github.io/singularity/cf2.html">A civilisation in the box concepts</a></li>
+<br />
+<li><a href="https://github.com/santex/singularity/tree/gh-pages">https://github.com</a></li>
+</ul>
+<aside><span style="zoom:95%;font-size:0.9em;width:59%;float:right;">Links</span></aside>
+</section>
+
+<section id="data">
+<span class="green">JSON</span><br>
+<div style="width:48%;float:left;display:inline;">
+<a href='http://santex.github.io/singularity/data/flare-big.json'>sample-json</a>
+<a href='http://santex.github.io/singularity/data/AAAI_Conference_on_Artificial_Intelligence.json'>AAAI_Conference_on_Artificial_Intelligence</a>
+<a href='http://santex.github.io/singularity/data/American_Association_for_Artificial_Intelligence.json'>American_Association_for_Artificial_Intelligence</a>
+<a href='http://santex.github.io/singularity/data/Anticipation_(artificial_intelligence).json'>Anticipation_(artificial_intelligence)</a>
+<a href='http://santex.github.io/singularity/data/Applications_of_artificial_intelligence.json'>Applications_of_artificial_intelligence</a>
+<a href='http://santex.github.io/singularity/data/Artificial_Intelligence_(journal).json'>Artificial_Intelligence_(journal)</a>
+<a href='http://santex.github.io/singularity/data/Artificial_Intelligence_System.json'>Artificial_Intelligence_System</a>
+<a href='http://santex.github.io/singularity/data/Artificial_intelligence#Deduction,_reasoning,_problem_solving.json'>Artificial_intelligence#Deduction,_reasoning,_problem_solving</a>
+<a href='http://santex.github.io/singularity/data/Artificial_intelligence#Knowledge_representation.json'>Artificial_intelligence#Knowledge_representation</a>
+<a href='http://santex.github.io/singularity/data/Artificial_intelligence#Motion_and_manipulation.json'>Artificial_intelligence#Motion_and_manipulation</a>
+<a href='http://santex.github.io/singularity/data/Artificial_intelligence#Natural_language_processing.json'>Artificial_intelligence#Natural_language_processing</a>
+<a href='http://santex.github.io/singularity/data/Artificial_intelligence.json'>Artificial_intelligence</a>
+<a href='http://santex.github.io/singularity/data/Artificial_intelligence_(video_games).json'>Artificial_intelligence_(video_games)</a>
+<a href='http://santex.github.io/singularity/data/Artificial_intelligence_systems_integration.json'>Artificial_intelligence_systems_integration</a>
+<a href='http://santex.github.io/singularity/data/Association_for_the_Advancement_of_Artificial_Intelligence.json'>Association_for_the_Advancement_of_Artificial_Intelligence</a>
+<a href='http://santex.github.io/singularity/data/Construct_(artificial_intelligence).json'>Construct_(artificial_intelligence)</a>
+<a href='http://santex.github.io/singularity/data/Diagnosis_(artificial_intelligence).json'>Diagnosis_(artificial_intelligence)</a>
+<a href='http://santex.github.io/singularity/data/Distributed_Artificial_Intelligence.json'>Distributed_Artificial_Intelligence</a>
+<a href='http://santex.github.io/singularity/data/Dreyfus_critique_of_artificial_intelligence.json'>Dreyfus_critique_of_artificial_intelligence</a>
+<a href='http://santex.github.io/singularity/data/Ethics_of_artificial_intelligence#Unintended_consequences.json'>Ethics_of_artificial_intelligence#Unintended_consequences</a>
+<a href='http://santex.github.io/singularity/data/Ethics_of_artificial_intelligence.json'>Ethics_of_artificial_intelligence</a>
+<a href='http://santex.github.io/singularity/data/European_Conference_on_Artificial_Intelligence.json'>European_Conference_on_Artificial_Intelligence</a>
+<a href='http://santex.github.io/singularity/data/Game_artificial_intelligence.json'>Game_artificial_intelligence</a>
+<a href='http://santex.github.io/singularity/data/History_of_artificial_intelligence.json'>History_of_artificial_intelligence</a>
+<a href='http://santex.github.io/singularity/data/Hubert_Dreyfuss_views_on_artificial_intelligence.json'>Hubert_Dreyfuss_views_on_artificial_intelligence</a>
+<a href='http://santex.github.io/singularity/data/International_Joint_Conference_on_Artificial_Intelligence.json'>International_Joint_Conference_on_Artificial_Intelligence</a>
+<a href='http://santex.github.io/singularity/data/List_of_artificial_intelligence_projects#Software_libraries.json'>List_of_artificial_intelligence_projects#Software_libraries</a>
+<a href='http://santex.github.io/singularity/data/List_of_basic_artificial_intelligence_topics.json'>List_of_basic_artificial_intelligence_topics</a>
+<a href='http://santex.github.io/singularity/data/List_of_important_publications_in_computer_science#Artificial_intelligence.json'>List_of_important_publications_in_computer_science#Artificial_intelligence</a>
+<a href='http://santex.github.io/singularity/data/List_of_notable_artificial_intelligence_projects.json'>List_of_notable_artificial_intelligence_projects</a>
+<a href='http://santex.github.io/singularity/data/MIT_Artificial_Intelligence_Laboratory.json'>MIT_Artificial_Intelligence_Laboratory</a>
+<a href='http://santex.github.io/singularity/data/MIT_Computer_Science_and_Artificial_Intelligence_Laboratory#Project_MAC.json'>MIT_Computer_Science_and_Artificial_Intelligence_Laboratory#Project_MAC</a>
+<a href='http://santex.github.io/singularity/data/MIT_Computer_Science_and_Artificial_Intelligence_Laboratory.json'>MIT_Computer_Science_and_Artificial_Intelligence_Laboratory</a>
+<a href='http://santex.github.io/singularity/data/Outline_of_artificial_intelligence.json'>Outline_of_artificial_intelligence</a>
+<a href='http://santex.github.io/singularity/data/Progress_in_artificial_intelligence.json'>Progress_in_artificial_intelligence</a>
+<a href='http://santex.github.io/singularity/data/Singularity_Institute_for_Artificial_Intelligence.json'>Singularity_Institute_for_Artificial_Intelligence</a>
+<a href='http://santex.github.io/singularity/data/Society_for_the_Study_of_Artificial_Intelligence_and_the_Simulation_of_Behaviour.json'>Society_for_the_Study_of_Artificial_Intelligence_and_the_Simulation_of_Behaviour</a>
+<a href='http://santex.github.io/singularity/data/Stanford_Artificial_Intelligence_Laboratory.json'>Stanford_Artificial_Intelligence_Laboratory</a>
+<a href='http://santex.github.io/singularity/data/Watson_(artificial_intelligence_software).json'>Watson_(artificial_intelligence_software)</a>
+<a href='http://santex.github.io/singularity/data/artificial_intelligence#Social_intelligence.json'>artificial_intelligence#Social_intelligence</a>
+<a href='http://santex.github.io/singularity/data/artificial_intelligence_in_fiction.json'>artificial_intelligence_in_fiction</a>
+<a href='http://santex.github.io/singularity/data/frame_(artificial_intelligence).json'>frame_(artificial_intelligence)</a>
+<a href='http://santex.github.io/singularity/data/friendly_artificial_intelligence.json'>friendly_artificial_intelligence</a>
+<a href='http://santex.github.io/singularity/data/philosophy_of_artificial_intelligence.json'>philosophy_of_artificial_intelligence</a>
+<a href='http://santex.github.io/singularity/data/scripts_(artificial_intelligence).json'>scripts_(artificial_intelligence)</a>
+<a href='http://santex.github.io/singularity/data/situated_artificial_intelligence.json'>situated_artificial_intelligence</a>
+<a href='http://santex.github.io/singularity/data/strong_artificial_intelligence.json'>strong_artificial_intelligence</a>
+</div>
+<div style="width:48%;float:right;display:inline;">
+<a href='http://santex.github.io/singularity/data/Singularity_Institute.json'>Singularity_Institute</a>
+<a href='http://santex.github.io/singularity/data/Singularity_Institute_for_Artificial_Intelligence.json'>Singularity_Institute_for_Artificial_Intelligence</a>
+<a href='http://santex.github.io/singularity/data/Singularity_Summit.json'>Singularity_Summit</a>
+<a href='http://santex.github.io/singularity/data/Singularity_University.json'>Singularity_University</a>
+<a href='http://santex.github.io/singularity/data/Singularity_theory.json'>Singularity_theory</a>
+<a href='http://santex.github.io/singularity/data/Technological_singularity.json'>Technological_singularity</a>
+<a href='http://santex.github.io/singularity/data/The_Singularity_Is_Near.json'>The_Singularity_Is_Near</a>
+<a href='http://santex.github.io/singularity/data/technological_singularity#Accelerating_change.json'>technological_singularity#Accelerating_change</a>
+</div>
+
+</section>
+
+<section id="charts">
+<iframe src="http://santex.github.io/singularity/workshop2/indicators.html" style="width:100%;height:100%;" scrolling="no"></iframe>
+</section>
+
+<!---//
+
+<section>
+<h1 class="double">Visualizing <span class="purple">Data</span> with <span class="green">Standards</span></h1>
+<h2>D3</h2>
+<aside>A.</aside>
+</section>
+
+<section id="update">
+<h1>Update</h1>
+<script>d3.select("#update").call(joinChart().mode("update"))</script>
+<h2>New data that was joined successfully to an existing element.</h2>
+</section>
+
+<section id="exit">
+<h1>Exit</h1>
+<script>d3.select("#exit").call(joinChart().mode("exit"))</script>
+<h2>Existing elements, for which there were no new data.</h2>
+<aside>I didn't include a code snippet here, but typically you just call selection.remove on exit. You can also create an exit transition, so that elements animate before removal.</aside>
+</section>
+
+<section id="enter-update">
+<h1 class="double">Enter <span class="grey">+</span><br>Update</h1>
+<script>d3.select("#enter-update").call(joinChart().mode("enter update"))</script>
+<h2>Entering nodes are added to update on append.</h2>
+<aside>OK, one more special feature of the append method on enter selections. This makes it easier for you to operate on entering and updating elements simultaneously, without needing to reselect after computing the data join. This reduces code duplication.</aside>
+</section>
+
+
+
+<section id="bar-chart">
+<script>
+d3.select("#bar-chart").datum([1, 1, 2, 3, 5, 8]).call(barChart());
+</script>
+<h2><a href="bar-chart.html">bar-chart.html</a></h2>
+</section>
+
+<section id="dot-chart">
+<script>
+d3.select("#dot-chart").datum([
+  {x: 10.0, y: 9.14},
+  {x:  8.0, y: 8.14},
+  {x: 13.0, y: 8.74},
+  {x:  9.0, y: 8.77},
+  {x: 11.0, y: 9.26},
+  {x: 14.0, y: 8.10},
+  {x:  6.0, y: 6.13},
+  {x:  4.0, y: 3.10},
+  {x: 12.0, y: 9.13},
+  {x:  7.0, y: 7.26},
+  {x:  5.0, y: 4.74},
+]).call(dotChart());
+</script>
+<h2><a href="dot-chart.html">dot-chart.html</a></h2>
+<aside>Nerd cred if you recognize this!</aside>
+</section>
+
+<section id="enter">
+<h1>Enter</h1>
+<script>d3.select("#enter").call(joinChart().mode("enter"))</script>
+<h2>New data, for which there were no existing elements.</h2>
+</section>
+
+<section id="stocks-csv-chart">
+<script>(function() {
+
+var format = d3.time.format("%b %Y");
+
+d3.csv("stocks.csv", function(stocks) {
+  stocks.forEach(function(d) {
+    d.price = +d.price;
+    d.date = format.parse(d.date);
+  });
+
+  stocks = stocks.filter(function(d) {
+    return d.symbol == "S&P 500";
+  });
+
+  d3.select("#stocks-csv-chart").insert("div", "h2")
+      .datum(stocks)
+    .call(timeChart()
+      .x(function(d) { return d.date; })
+      .y(function(d) { return d.price; }));
+});
+
+})()</script>
+
+</section>
+---->
+
+<script src="stack.v0.js"></script>
+<script src="highlight.v0.js"></script>
+<img src="nothanks.png" style="position:fixed;right:0px;bottom:0px;"/>
