@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Sticky footer &middot; Twitter Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- CSS -->
+    <link href="/docs/assets/css/bootstrap.css" rel="stylesheet">
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <style type="text/css">
+
+      /* Sticky footer styles
+      -------------------------------------------------- */
+
+      html{
+        margin-left:90px;
+        height: 100%;
+        /* The html and body elements cannot have any padding or margin. */
+      }
+
+      /* Wrapper for page content to push down footer */
+      #meta {
+       float:left;
+      }
+
+      /* Wrapper for page content to push down footer */
+      #sitzung {
+       float:right;
+      }
+
+      /* Set the fixed height of the footer here */
+      #push{
+  min-height: 100%;
+      
+
+      }
+      #footer {
+        height: 60px;
+      }
+      #footer {
+        background-color: #f5f5f5;
+      }
+
+      /* Lastly, apply responsive CSS fixes as necessary */
+      @media (max-width: 767px) {
+        #footer {
+          margin-left: -20px;
+          margin-right: -20px;
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+      }
+
+
+
+      /* Custom page CSS
+      -------------------------------------------------- */
+      /* Not required for template or sticky footer method. */
+
+      #wrap > .container {
+        padding-top: 60px;
+      }
+      .container .credit {
+        margin: 20px 0;
+      }
+
+      code {
+        font-size: 80%;
+      }
+
+    </style>
+    <link href="/docs/assets/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="/docs/assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/docs/assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/docs/assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/docs/assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="/docs/assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="/docs/assets/ico/favicon.png">
+<style>
+
+circle {
+  fill: rgb(31, 119, 180);
+  fill-opacity: .25;
+  stroke: rgb(31, 119, 180);
+  stroke-width: 1px;
+}
+
+.leaf circle {
+  fill: #ff7f0e;
+  fill-opacity: 1;
+}
+
+text {
+  font: 10px sans-serif;
+}
+
+</style>
+  </head>
+
+  <body>
+
+
+    <!-- Part 1: Wrap all page content here -->
+    <div id="wrap">
+
+      <!-- Fixed navbar -->
+      <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+          <div class="container">
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="brand" href="#">(Civilisation in the box) not even close</a>
+            <div class="nav-collapse collapse">
+              <ul class="nav">
+                
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="http://localhost/cf5-index.html">default</a></li>
+                    <li><a href="http://localhost/cf5.html">default</a></li>
+                    <li><a href="http://localhost/cf2-cat.html">cat</a></li>
+                    <li><a href="http://localhost/cf2-big.html">concepts</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
+        </div>
+      </div>
+      <!-- Begin page content -->
+      <div class="container">
+        <div class="page-header">
+        (matrix) biology -> [medicine,gene,genetics,biochemistry,botany,animal,horse]
+        </div>
+<div style="float:right;" id="sitzung"></div>
+        
+        
+<div  id="sitzung" ></div>       
+<p class="lead" style="width:980px;"></p>
+
+<script>
+
+var diameter = 700,
+    format = d3.format(",d");
+
+var pack = d3.layout.pack()
+    .size([diameter - 4, diameter - 4])
+    .value(function(d) { return d.size; });
+
+var svg = d3.select("#sitzung").append("svg")
+    .attr("width", diameter)
+    .attr("height", diameter)
+  .append("g")
+    .attr("transform", "translate(2,2)");
+
+d3.json("/data-hub/flare-big.json", function(error, root) {
+  var node = svg.datum(root).selectAll(".node")
+      .data(pack.nodes)
+    .enter().append("g")
+      .attr("class", function(d) { return d.children ? "node" : "leaf node"; })
+      .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
+
+  node.append("title")
+      .text(function(d) { return d.name + (d.children ? "" : ": " + format(d.size)); });
+
+  node.append("circle")
+      .attr("r", function(d) { return d.r; });
+
+  node.filter(function(d) { return !d.children; }).append("text")
+      .attr("dy", ".3em")
+      .style("text-anchor", "middle")      
+      
+      .text(function(d) { return d.name.substring(0, d.r / 3); });
+});
+
+d3.select(self.frameElement).style("height", diameter + "px");
+
+</script><div id="push"></div>
+      </div>
+
+      
+    </div>
+
+
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/docs/assets/js/jquery.js"></script>
+    <script src="/docs/assets/js/bootstrap-transition.js"></script>
+    <script src="/docs/assets/js/bootstrap-alert.js"></script>
+    <script src="/docs/assets/js/bootstrap-modal.js"></script>
+    <script src="/docs/assets/js/bootstrap-dropdown.js"></script>
+    <script src="/docs/assets/js/bootstrap-scrollspy.js"></script>
+    <script src="/docs/assets/js/bootstrap-tab.js"></script>
+    <script src="/docs/assets/js/bootstrap-tooltip.js"></script>
+    <script src="/docs/assets/js/bootstrap-popover.js"></script>
+    <script src="/docs/assets/js/bootstrap-button.js"></script>
+    <script src="/docs/assets/js/bootstrap-collapse.js"></script>
+    <script src="/docs/assets/js/bootstrap-carousel.js"></script>
+    <script src="/docs/assets/js/bootstrap-typeahead.js"></script>
+
+  </body>
+</html>
+

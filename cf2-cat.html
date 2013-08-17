@@ -7,9 +7,6 @@
 <script src="http://d3js.org/d3.v3.min.js"></script>
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link href="docs/assets/css/bootstrap.css" rel="stylesheet">
-    <link href="docs/assets/css/bootstrap-responsive.min.css" rel="stylesheet">
     
     <style type="text/css">
 
@@ -20,7 +17,7 @@
 }
 
 text {
-  font-size: 11px;
+  font-size: 9px;
 }
 
 rect {
@@ -28,6 +25,61 @@ rect {
 }
 
 
+.purple,
+.html .value,
+.javascript .string,
+.javascript .regexp {
+  color: #9e9ac8;
+}
+
+.blue,
+.html .tag,
+.css .tag,
+.javascript .keyword {
+  color: #6baed6;
+}
+
+.grey,
+.comment {
+  color: #969696;
+}
+
+.green,
+.html .doctype,
+.javascript .number {
+  color: #74c476;
+}
+
+.orange,
+.html .attribute,
+.css .attribute,
+.javascript .class,
+.javascript .special {
+  color: #fd8d3c;
+}
+
+.highlight {
+  background: #636363;
+}
+
+.pink {
+  color: #e377c2;
+}
+
+.white {
+  color: #fff;
+}
+
+.black {
+  color: #333;
+}
+
+.wall {
+  display: block;
+  height: 490px;
+  overflow: hidden;
+  word-break: break-all;
+}
     </style>
   </head>
   <body>
@@ -46,8 +98,8 @@ rect {
   </div>
     <script type="text/javascript">
 
-var w = 1500 - 20,
-    h = 940 - 180,
+var w = 1600 - 120,
+    h = 900 - 120,
     x = d3.scale.linear().range([0, w]),
     y = d3.scale.linear().range([0, h]),
     color = d3.scale.category20c(),
@@ -70,7 +122,7 @@ var svg = d3.select("#body").append("div")
   .append("svg:g")
     .attr("transform", "translate(.5,.5)");
 
-d3.json("/data-hub/flare-big.json", function(data) {
+d3.json("/data-hub/flare-cat.json", function(data) {
   node = root = data;
 
   var nodes = treemap.nodes(root)
