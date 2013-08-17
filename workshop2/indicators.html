@@ -1,8 +1,7 @@
 <style>
-html{
-  margin: 20px;
-  padding: 20px;
-  height:80%;
+  html{
+  margin: 0;
+  padding: 0;
   
 
 }
@@ -115,7 +114,7 @@ YUI().use('yql', 'node', 'anim', 'dd', 'dd-plugin', 'dd-drop-plugin', 'slider', 
             });
             //Create and render the slider
             var sl = new Y.Slider({
-                length: '100px', value: 20, max: 150, min: 5
+                length: '200px', value: 120, max: 150, min: 5
             }).render('.horiz_slider');
             //Listen for the change
             sl.after('valueChange',function (e) {
