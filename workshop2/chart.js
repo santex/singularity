@@ -9,7 +9,7 @@ function joinChart() {
 
     selection.each(function() {
       var svg = d3.select(this).append("svg")
-          .attr("width", 1320)
+          .attr("width", 1420)
           .attr("height", 720)
           .attr("class", "join chart")
         .append("g")
@@ -63,7 +63,7 @@ function joinChart() {
 
 function barChart() {
   var margin = {top: 80, right: 80, bottom: 200, left: 80},
-      width = 1280,
+      width = 1380,
       height = 720;
 
   var x = d3.scale.linear()
@@ -123,7 +123,7 @@ function barChart() {
 
 function dotChart() {
   var margin = {top: 80, right: 80, bottom: 200, left: 80},
-      width = 1280,
+      width = 1480,
       height = 720;
 
   var x = d3.scale.linear()
@@ -194,7 +194,7 @@ function dotChart() {
 
 function timeChart() {
   var margin = {top: 80, right: 80, bottom: 200, left: 80},
-      width = 1280,
+      width = 1480,
       height = 720;
 
   var xValue = function(d) { return d[0]; },
@@ -340,7 +340,7 @@ function streamChart() {
       m = 50, // number of samples per layer
       stack = d3.layout.stack().offset("wiggle");
 
-  var w = 1280,
+  var w = 1480,
       h = 390;
 
   var x = d3.scale.linear()
@@ -408,7 +408,7 @@ function streamChart() {
 }
 
 function interpolateChart() {
-  var width = 1280,
+  var width = 1480,
       height = 720;
 
   var n = 36,
