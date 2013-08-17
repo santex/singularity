@@ -72,13 +72,19 @@
       }
 
     </style>
-    <link href="bootstrap-responsive.css" rel="stylesheet">
+    <link href="/singularity/docs/assets/css/bootstrap-responsive.css" rel="stylesheet">
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
-      <script src="/docs/assets/js/html5shiv.js"></script>
+      <script src="/singularity/docs/assets/js/html5shiv.js"></script>
     <![endif]-->
 
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/singularity/docs/assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/singularity/docs/assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/singularity/docs/assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="/singularity/docs/assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="/singularity/docs/assets/ico/favicon.png">
 <style>
 
 circle {
@@ -122,7 +128,7 @@ text {
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
                   <ul class="dropdown-menu">
-                    <li><a href="cf2-big.html">concepts</a></li>
+                    <li><a href="/singularity/cf2-big.html">concepts</a></li>
                     
                   </ul>
                 </li>
@@ -157,7 +163,7 @@ var svg = d3.select("#sitzung").append("svg")
   .append("g")
     .attr("transform", "translate(2,2)");
 
-d3.json("flare-cat.json", function(error, root) {
+d3.json("/singularity/flare-cat.json", function(error, root) {
   var node = svg.datum(root).selectAll(".node")
       .data(pack.nodes)
     .enter().append("g")
@@ -190,19 +196,19 @@ d3.select(self.frameElement).style("height", diameter + "px");
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="/docs/assets/js/jquery.js"></script>
-    <script src="/docs/assets/js/bootstrap-transition.js"></script>
-    <script src="/docs/assets/js/bootstrap-alert.js"></script>
-    <script src="/docs/assets/js/bootstrap-modal.js"></script>
-    <script src="/docs/assets/js/bootstrap-dropdown.js"></script>
-    <script src="/docs/assets/js/bootstrap-scrollspy.js"></script>
-    <script src="/docs/assets/js/bootstrap-tab.js"></script>
-    <script src="/docs/assets/js/bootstrap-tooltip.js"></script>
-    <script src="/docs/assets/js/bootstrap-popover.js"></script>
-    <script src="/docs/assets/js/bootstrap-button.js"></script>
-    <script src="/docs/assets/js/bootstrap-collapse.js"></script>
-    <script src="/docs/assets/js/bootstrap-carousel.js"></script>
-    <script src="/docs/assets/js/bootstrap-typeahead.js"></script>
+    <script src="/singularity/docs/assets/js/jquery.js"></script>
+    <script src="/singularity/docs/assets/js/bootstrap-transition.js"></script>
+    <script src="/singularity/docs/assets/js/bootstrap-alert.js"></script>
+    <script src="/singularity/docs/assets/js/bootstrap-modal.js"></script>
+    <script src="/singularity/docs/assets/js/bootstrap-dropdown.js"></script>
+    <script src="/singularity/docs/assets/js/bootstrap-scrollspy.js"></script>
+    <script src="/singularity/docs/assets/js/bootstrap-tab.js"></script>
+    <script src="/singularity/docs/assets/js/bootstrap-tooltip.js"></script>
+    <script src="/singularity/docs/assets/js/bootstrap-popover.js"></script>
+    <script src="/singularity/docs/assets/js/bootstrap-button.js"></script>
+    <script src="/singularity/docs/assets/js/bootstrap-collapse.js"></script>
+    <script src="/singularity/docs/assets/js/bootstrap-carousel.js"></script>
+    <script src="/singularity/docs/assets/js/bootstrap-typeahead.js"></script>
 
   </body>
 </html>

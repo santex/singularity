@@ -8,7 +8,7 @@
     <meta name="author" content="">
 
     <!-- CSS -->
-    <link href="/docs/assets/css/bootstrap.css" rel="stylesheet">
+    <link href="/singularity/docs/assets/css/bootstrap.css" rel="stylesheet">
     <script src="http://d3js.org/d3.v3.min.js"></script>
     <style type="text/css">
 
@@ -165,7 +165,7 @@ var svg = d3.select("#sitzung").append("svg")
   .append("g")
     .attr("transform", "translate(2,2)");
 
-d3.json("flare-big.json", function(error, root) {
+d3.json("/singularity/flare-big.json", function(error, root) {
   var node = svg.datum(root).selectAll(".node")
       .data(pack.nodes)
     .enter().append("g")
