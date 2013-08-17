@@ -8,7 +8,7 @@
     <meta name="author" content="">
 
     <!-- CSS -->
-    <link href="/docs/assets/css/bootstrap.css" rel="stylesheet">
+    <link href="bootstrap.css" rel="stylesheet">
     <script src="http://d3js.org/d3.v3.min.js"></script>
     <style type="text/css">
 
@@ -72,19 +72,13 @@
       }
 
     </style>
-    <link href="/docs/assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="bootstrap-responsive.css" rel="stylesheet">
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="/docs/assets/js/html5shiv.js"></script>
     <![endif]-->
 
-    <!-- Fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/docs/assets/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/docs/assets/ico/apple-touch-icon-114-precomposed.png">
-      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/docs/assets/ico/apple-touch-icon-72-precomposed.png">
-                    <link rel="apple-touch-icon-precomposed" href="/docs/assets/ico/apple-touch-icon-57-precomposed.png">
-                                   <link rel="shortcut icon" href="/docs/assets/ico/favicon.png">
 <style>
 
 circle {
@@ -128,7 +122,7 @@ text {
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
                   <ul class="dropdown-menu">
-                    <li><a href="http://localhost/cf2-big.html">concepts</a></li>
+                    <li><a href="cf2-big.html">concepts</a></li>
                     
                   </ul>
                 </li>
@@ -163,7 +157,7 @@ var svg = d3.select("#sitzung").append("svg")
   .append("g")
     .attr("transform", "translate(2,2)");
 
-d3.json("/data-hub/flare-cat.json", function(error, root) {
+d3.json("flare-cat.json", function(error, root) {
   var node = svg.datum(root).selectAll(".node")
       .data(pack.nodes)
     .enter().append("g")
