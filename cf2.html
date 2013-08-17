@@ -7,9 +7,6 @@
 <script src="http://d3js.org/d3.v3.min.js"></script>
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link href="docs/assets/css/bootstrap.css" rel="stylesheet">
-    <link href="docs/assets/css/bootstrap-responsive.min.css" rel="stylesheet">
     
     <style type="text/css">
 
@@ -70,7 +67,7 @@ var svg = d3.select("#body").append("div")
   .append("svg:g")
     .attr("transform", "translate(.5,.5)");
 
-d3.json("/data-hub/flare0.json", function(data) {
+d3.json("flare0.json", function(data) {
   node = root = data;
 
   var nodes = treemap.nodes(root)
