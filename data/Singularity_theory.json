@@ -1,0 +1,183 @@
+{
+    "cursor": "8541",
+    "size": 15,
+    "audio": [],
+    "currentlang": "en",
+    "article": "{{multiple issues|\n\n\n\n}}\n\n:For other geometic uses, see [[Singular point of a curve]]. For other\nmathematical uses, see [[Mathematical singularity]]. For non-mathematical uses,\nsee [[Singularity (disambiguation)]]\n",
+    "linknr": 203,
+    "url": "Singularity_theory",
+    "recorded": 1362477235,
+    "links": 21,
+    "instances": [
+        "mathematics",
+        "mathematics",
+        "mathematics",
+        "mathematics",
+        "singularity",
+        "mathematics",
+        "mathematics",
+        "mathematics",
+        "mathematics",
+        "algebra"
+    ],
+    "pdf": [],
+    "categories": [
+        "Singularity theory|"
+    ],
+    "headings": [
+        "The notion of singularity",
+        "Singularities in algebraic geometry",
+        "The smooth theory, and catastrophes",
+        "Other possible meanings",
+        "See also",
+        "References"
+    ],
+    "image": [
+        "//upload.wikimedia.org/wikipedia/en/f/f4/Ambox_content.png",
+        "//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png",
+        "//upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/40px-Edit-clear.svg.png",
+        "//upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/40px-Edit-clear.svg.png",
+        "//upload.wikimedia.org/math/1/6/a/16a6ae858e2a2ce7ea3181efa1ecd5cb.png",
+        "//upload.wikimedia.org/math/3/d/b/3dbba631cc17f9060d34378b736cff00.png",
+        "//bits.wikimedia.org/static-1.21wmf10/skins/vector/images/search-ltr.png?303-4",
+        "//bits.wikimedia.org/images/wikimedia-button.png",
+        "//bits.wikimedia.org/static-1.21wmf10/skins/common/images/poweredby_mediawiki_88x31.png"
+    ],
+    "tags": [
+        [
+            "caustic",
+            "mathematics"
+        ],
+        [
+            "degeneracy",
+            "mathematics"
+        ],
+        [
+            "cusp",
+            "singularity"
+        ],
+        [
+            "multiplicity",
+            "mathematics"
+        ],
+        [
+            "characteristic",
+            "algebra"
+        ],
+        [
+            "critical_point",
+            "mathematics"
+        ],
+        [
+            "germ",
+            "mathematics"
+        ],
+        [
+            "jet",
+            "mathematics"
+        ],
+        [
+            "contact",
+            "mathematics"
+        ],
+        [
+            "stratification",
+            "mathematics"
+        ]
+    ],
+    "members": [
+        "caustic",
+        "jet",
+        "multiplicity",
+        "contact",
+        "cusp",
+        "stratification",
+        "germ",
+        "critical_point",
+        "degeneracy",
+        "characteristic"
+    ],
+    "related": [
+        "Mathematics",
+        "Manifold",
+        "Double_point",
+        "3D_projection",
+        "Human_eye",
+        "Folding",
+        "Caustic_(mathematics)",
+        "Swimming_pool",
+        "Degeneracy_(mathematics)",
+        "Parametrization",
+        "General_relativity",
+        "Gravitational_singularity",
+        "Gravitational_field",
+        "Space-time",
+        "Black_hole",
+        "Symmetry",
+        "Orbifold",
+        "Table_napkin",
+        "Algebraic_curve",
+        "Cusp_(singularity)",
+        "Isaac_Newton",
+        "Cubic_curve",
+        "Bézout's_theorem",
+        "Multiplicity_(mathematics)",
+        "Singular_point_of_an_algebraic_variety",
+        "Algebraic_geometry",
+        "Polynomial_equation",
+        "Coordinate_system",
+        "Algebraic_variety",
+        "Heisuke_Hironaka",
+        "Resolution_of_singularities",
+        "Birational_geometry",
+        "Characteristic_(algebra)",
+        "Affine_geometry",
+        "Projective_geometry",
+        "Affine_variety",
+        "Hyperplane_at_infinity",
+        "Projective_space",
+        "Compactification",
+        "Zariski_topology",
+        "Catastrophe_theory",
+        "René_Thom",
+        "Hassler_Whitney",
+        "Critical_point_(mathematics)",
+        "Smooth_function",
+        "Level_set",
+        "Catastrophe_theory",
+        "Christopher_Zeeman",
+        "Vladimir_Arnold",
+        "Equivalence_relation",
+        "Germ_(mathematics)",
+        "Group_action",
+        "Lie_group",
+        "Jet_(mathematics)",
+        "Taylor_series",
+        "Derivative",
+        "Symplectic_geometry",
+        "Classical_mechanics",
+        "Poincaré_duality",
+        "Intersection_cohomology",
+        "Perverse_sheaf",
+        "Homological_algebra",
+        "Mathematical_singularity",
+        "Isolated_singularity",
+        "Essential_singularity",
+        "Removable_singularity",
+        "Monodromy",
+        "Differential_equation",
+        "Covering_map",
+        "Fractal",
+        "Tangent",
+        "Zariski_tangent_space",
+        "General_position",
+        "Contact_(mathematics)",
+        "Singular_solution",
+        "Folding",
+        "Stratification_(mathematics)",
+        "Intersection_homology",
+        "Mixed_Hodge_structure",
+        "Whitney_umbrella",
+        "Round_function"
+    ]
+}
